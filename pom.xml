@@ -99,6 +99,14 @@
 							</execution>
 						</executions>
 					</plugin>
+
+					<plugin>
+						<groupId>org.sonatype.plugins</groupId>
+						<artifactId>nexus-staging-maven-plugin</artifactId>
+						<configuration>
+							<skipNexusStagingDeployMojo>true</skipNexusStagingDeployMojo>
+						</configuration>
+					</plugin>
 				</plugins>
 			</build>
 			<!-- 【注】snapshotRepository 与 repository 中的 id 一定要与 setting.xml 中 server 
